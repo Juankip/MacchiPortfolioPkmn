@@ -1,4 +1,3 @@
-// 1. Mapa de imágenes de la mochila según la categoría
 const bagImages = {
     proyectos: 'assets/Mochila_Proyectos.png',
     habilidades: 'assets/Mochila_Habilidades.png',
@@ -7,38 +6,65 @@ const bagImages = {
     contactos: 'assets/Mochila_Contactos.png'
 };
 
-// 2. Tus datos organizados
 const portfolioData = {
     proyectos: [
-        { nombre: "Macchi E-commerce", descripcion: "Tienda online (2025). Proyecto web enfocado en diseño funcional y estética limpia." },
-        { nombre: "TPI Data Analytics", descripcion: "Proyecto completo de análisis de datos utilizando Python, Pandas, Matplotlib y Seaborn." }
+        { 
+            nombre: "La Verdulería de Teto", 
+            descripcion: "Proyecto frontend: Página web ficticia desarrollada con HTML, CSS y JS. <a href='https://juankip.github.io/La-verduleria-de-teto/' target='_blank'>[Ver código]</a>",
+            icono: "assets/icon-html.png" 
+        },
+        { 
+            nombre: "Análisis de Datos", 
+            descripcion: "Proyecto de análisis y manipulación de datos en Google Colab utilizando Pandas. <a href='https://colab.research.google.com/drive/16nbbUx7tiCqJHq6NEUK87a_d4ohKdysB#scrollTo=FHVl1QPkte0x' target='_blank'>[Ver código]</a>",
+            icono: "assets/icon-GoogleCollab.png"
+        }
     ],
     habilidades: [
-        { nombre: "Python & Librerías", descripcion: "Manipulación y visualización de datos avanzados." },
-        { nombre: "Desarrollo Web", descripcion: "HTML, CSS y JS. Creación de interfaces amigables." },
-        { nombre: "Inglés Avanzado", descripcion: "Facilidad para leer documentación técnica y resolver problemas." }
+        { nombre: "Data & Backend", descripcion: "Python, Pandas, C++ y MySQL.", icono: "assets/icon-python.png" },
+        { nombre: "Desarrollo Web", descripcion: "HTML, CSS y JavaScript.", icono: "assets/icon-JavaScript.png" },
+        { nombre: "Soft Skills", descripcion: "Pensamiento analítico, lógica, atención al detalle y aprendizaje autodidacta.", icono: "assets/icon-Logica.png" },
+        { nombre: "Idiomas", descripcion: "Inglés C1 Avanzado y Español Nativo.", icono: "assets/icon-Argentina.png" },
+        { nombre: "Ofimática", descripcion: "Microsoft Word, Excel y PowerPoint Avanzado (Paquete Office).", icono: "assets/icon-Office.png" }
     ],
-    educacion: [
-        { nombre: "Image Campus", descripcion: "Tecnicatura en Programación Avanzada de Videojuegos (Inscripción para ciclo 2026)." }
+educacion: [
+        { 
+            nombre: "Programación & Web", 
+            descripcion: "Certificados: <a href='./Multimedia/Certificados/Certificado_Front_EndJS.pdf' target='_blank'>[Front-End JS]</a> <a href='./Multimedia/Certificados/Diploma_CAC.pdf' target='_blank'>[Prog. Inicial Codo a Codo]</a> <a href='./Multimedia/Certificados/Certificado_Cobol.pdf' target='_blank'>[Intro a Cobol]</a> <a href='./Multimedia/Certificados/SOA_Python.pdf' target='_blank'>[Python]</a>", 
+            icono: "assets/icon-code.png" 
+        },
+        { 
+            nombre: "Data e IA", 
+            descripcion: "Certificados: <a href='./Multimedia/Certificados/DataAnalytics.pdf' target='_blank'>[Data Analytics]</a> <a href='./Multimedia/Certificados/SOA_CienciaDatos.pdf' target='_blank'>[Ciencia de Datos]</a> <a href='./Multimedia/Certificados/IntroduccionIA.pdf' target='_blank'>[Intro a IA]</a> <a href='./Multimedia/Certificados/SOA_Gemini.pdf' target='_blank'>[Google: IA y Productividad]</a>", 
+            icono: "assets/icon-chart.png" 
+        },
+        { 
+            nombre: "Negocios & Tech", 
+            descripcion: "Certificados: <a href='./Multimedia/Certificados/SOA_Ecommerce.pdf' target='_blank'>[E-Commerce]</a> <a href='./Multimedia/Certificados/curso_santander___habilidades_digitales_para_el_siglo_xxi.pdf' target='_blank'>[Hab. Digitales s.XXI]</a> <a href='./Multimedia/Certificados/SOA_PowerBI.pdf' target='_blank'>[Power BI]</a> <a href='./Multimedia/Certificados/SOA_Excel.pdf' target='_blank'>[Excel]</a> <a href='./Multimedia/Certificados/SOA_IoT.pdf' target='_blank'>[Internet de las Cosas]</a>", 
+            icono: "assets/icon-book.png" 
+        },
+        { 
+            nombre: "Idiomas & Soft Skills", 
+            descripcion: "Certificados: <a href='./Multimedia/Certificados/AgHa_Ingles.pdf' target='_blank'>[Inglés Nivel Int. 1]</a> <a href='./Multimedia/Certificados/SOA_Ingles.pdf' target='_blank'>[Business English]</a> <a href='./Multimedia/Certificados/SOA_CommEstrat.pdf' target='_blank'>[Comunicación Estratégica]</a> <a href='./Multimedia/Certificados/SOA_Psico.pdf' target='_blank'>[Comportamiento Consumidor]</a>", 
+            icono: "assets/icon-chat.png" 
+        }
     ],
     sobreMi: [
-        { nombre: "Gaming & Cultura", descripcion: "Interés profundo en hardware, la saga Fate, y juegos competitivos (Valorant, LoL, Honkai: Star Rail)." },
-        { nombre: "Deportes", descripcion: "Cuando no estoy programando, juego al fútbol como arquero." }
+        { nombre: "Perfil Profesional", descripcion: "Estudiante de Análisis en Sistemas. Altamente motivado, atento al detalle y con fuertes habilidades lógicas.", icono: "assets/icon-user.png" },
+        { nombre: "Experiencia Laboral", descripcion: "Digitador en MANPOWER Argentina (2023 y 2025). Gestión de datos, mecanografía y análisis.", icono: "assets/icon-work.png" }
     ],
     contactos: [
-        { nombre: "GitHub", descripcion: "¡Explora mi código fuente!" },
-        { nombre: "LinkedIn", descripcion: "Conectemos profesionalmente." }
+        { nombre: "LinkedIn", descripcion: "¡Conectemos para futuras oportunidades! <a href='https://www.linkedin.com/in/juan-sebastián-macchi-441191230/' target='_blank'>[Mi Perfil]</a>", icono: "assets/icon-linkedin.png" },
+        { nombre: "Email y Celular", descripcion: "juasemacchi@gmail.com | (011) 3559-5106", icono: "assets/icon-mail.png" },
+        { nombre: "Ubicación", descripcion: "Capital Federal, Buenos Aires, Argentina.", icono: "assets/icon-maps.png" }
     ]
 };
 
-// Referencias a los elementos del HTML
 const navButtons = document.querySelectorAll('.nav-btn');
 const itemList = document.getElementById('item-list');
 const dialogText = document.getElementById('dialog-text');
-const bagSprite = document.getElementById('bag-sprite'); // Referencia a la imagen
+const bagSprite = document.getElementById('bag-sprite');
 const itemIcon = document.getElementById('item-icon-display');
 
-// Función para mostrar los ítems según la categoría seleccionada
 function renderItems(category) {
     itemList.innerHTML = '';
     const items = portfolioData[category];
@@ -48,27 +74,28 @@ function renderItems(category) {
         li.textContent = item.nombre;
         
         li.addEventListener('click', () => {
-            dialogText.textContent = item.descripcion;
+            // Actualiza el texto
+            dialogText.innerHTML = item.descripcion;
+            
+            // Actualiza el ícono si existe
+            if (item.icono) {
+                // Inyectamos la imagen con la clase pixel-art para que no se vea borrosa
+                itemIcon.innerHTML = `<img src="${item.icono}" alt="${item.nombre}" style="width: 100%; height: 100%; object-fit: contain;" class="pixel-art">`;
+            } else {
+                itemIcon.innerHTML = ''; // Lo deja vacío si por algún motivo no le pusiste ícono
+            }
         });
 
         itemList.appendChild(li);
     });
 }
 
-// Configurar los botones de navegación
 navButtons.forEach(button => {
     button.addEventListener('click', () => {
-        // --- LÓGICA DE ANIMACIÓN (Corregida) ---
-        // 1. Quitamos la clase de animación si ya existía para resetearla
         bagSprite.classList.remove('animate-bag');
-        
-        // 2. Truco técnico para que el navegador "note" el cambio y pueda reiniciar la animación
         void bagSprite.offsetWidth; 
-        
-        // 3. Agregamos la clase de animación EXCLUSIVAMENTE a la imagen
         bagSprite.classList.add('animate-bag');
 
-        // --- LÓGICA DE CAMBIO DE DATOS (Lo que ya tenías) ---
         navButtons.forEach(btn => btn.style.color = 'white');
         button.style.color = '#f8e870';
 
@@ -76,14 +103,12 @@ navButtons.forEach(button => {
         
         renderItems(category);
         
-        // Cambiamos la imagen src (esto ocurre justo al inicio de la animación)
         bagSprite.src = bagImages[category];
         
-        dialogText.textContent = "¿Qué vas a revisar?";
-        itemIcon.innerHTML = ''; 
+        dialogText.innerHTML = "¿Qué vas a revisar?";
+        itemIcon.innerHTML = ''; // Limpia el ícono al cambiar de bolsillo
     });
 });
 
-// Inicializar la primera pestaña por defecto
 renderItems('proyectos');
 navButtons[0].style.color = '#f8e870';
