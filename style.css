@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', monospace; /* Fuente retro */
+}
+
+body {
+    background-color: #2b2b2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* =========================================
+   CONTENEDOR PRINCIPAL - MEDIDAS GRANDES
+   ========================================= */
+.gba-screen {
+    /* Volvemos a las medidas grandes (1.5x) */
+    width: 900px; 
+    height: 600px; 
+    background-color: #f8f8d8; /* Color crema de los menús Pokémon */
+    border: 6px solid #506860; /* Borde más grueso proporcional */
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px; /* Más padding interno */
+    box-shadow: 0 0 25px rgba(0,0,0,0.6); /* Sombra más pronunciada */
+    overflow: hidden; /* Mantiene todo dentro de los bordes estables */
+}
+
+/* =========================================
+   NAVEGACIÓN (Arriba) - ESCALADA
+   ========================================= */
+.pocket-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #506860;
+    padding: 12px 10px; /* Más padding para los botones grandes */
+    border-radius: 6px;
+    margin-bottom: 15px;
+    gap: 8px;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    color: white;
+    /* Fuente más grande: de 1.2rem a 1.6rem */
+    font-size: 1.6rem; 
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+
+.nav-btn:hover {
+    color: #f8e870; /* Color amarillo de selección */
+}
+
+/* =========================================
+   CENTRO (Estático y grande)
+   ========================================= */
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Mitad y mitad exactos */
+    flex-grow: 1;
+    gap: 15px; /* Más espacio entre paneles */
+    margin-bottom: 15px;
+    /* Altura estable basada en el nuevo tamaño del cuadro de diálogo */
+    height: calc(100% - 135px); 
+}
+
+.visual-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #a8a8a8; /* Bordes internos más gruesos */
+    background-color: #e8e8e8;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+/* Contenedor ESTABLE y grande para la mochila */
+.bag-container {
+    width: 250px; /* Tamaño grande de la mochila */
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#bag-sprite {
+    width: 100%;
+    height: auto;
+    /* La alineación se mantiene estable gracias al contenedor fijo */
+}
+
+/* El cuadradito gris de abajo también crece */
+.item-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #bbb;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-panel {
+    border: 3px solid #506860; /* Borde más grueso */
+    background-color: white;
+    border-radius: 6px;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+#item-list {
+    list-style: none;
+}
+
+#item-list li {
+    /* Fuente de lista más grande: de 1.4rem a 2.0rem */
+    font-size: 2.0rem; 
+    padding: 8px 0;
+    cursor: pointer;
+    border-bottom: 2px dashed #ccc;
+}
+
+#item-list li:hover {
+    background-color: #e0f0e8;
+}
+
+#item-list li::before {
+    content: "▶ ";
+    color: transparent;
+}
+
+#item-list li:hover::before {
+    color: #e84850; /* Flechita roja de selección */
+}
+
+/* =========================================
+   CUADRO DE DIÁLOGO (Abajo) - ESCALADO
+   ========================================= */
+.dialog-box {
+    /* Aumentamos la altura de 80px a 120px */
+    height: 120px;
+    background-color: white;
+    border: 6px solid #506860; /* Borde grueso estable */
+    border-radius: 12px;
+    padding: 15px;
+    /* Fuente de diálogo más grande: de 1.5rem a 2.2rem */
+    font-size: 2.2rem; 
+    line-height: 1.3;
+    box-shadow: inset 3px 3px 0px #a8a8a8;
+    display: flex;
+    align-items: center; /* Centra el texto verticalmente */
+}
+
+/* =========================================
+   UTILIDADES Y ANIMACIONES (Estables)
+   ========================================= */
+.pixel-art {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+/* La animación perfecta que ya tenías */
+@keyframes pokePop {
+    0% {
+        transform: scale(0.9); /* Empieza un poco chica */
+    }
+    40% {
+        transform: scale(1.05); /* Se estira rápido */
+    }
+    100% {
+        transform: scale(1); /* Vuelve al tamaño normal */
+    }
+}
+
+/* Clase aplicada vía JS solo a la imagen grande */
+.animate-bag {
+    animation: pokePop 0.3s ease-out; /* Duración rápida */
+}
