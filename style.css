@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'VT323', monospace; /* Fuente retro */
+    font-family: 'VT323', monospace;
 }
 
 body {
@@ -13,32 +13,25 @@ body {
     height: 100vh;
 }
 
-/* =========================================
-   CONTENEDOR PRINCIPAL - MEDIDAS GRANDES
-   ========================================= */
 .gba-screen {
-    /* Volvemos a las medidas grandes (1.5x) */
     width: 900px; 
     height: 600px; 
-    background-color: #f8f8d8; /* Color crema de los menús Pokémon */
-    border: 6px solid #506860; /* Borde más grueso proporcional */
+    background-color: #f8f8d8;
+    border: 6px solid #506860;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-    padding: 15px; /* Más padding interno */
-    box-shadow: 0 0 25px rgba(0,0,0,0.6); /* Sombra más pronunciada */
-    overflow: hidden; /* Mantiene todo dentro de los bordes estables */
+    padding: 15px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.6);
+    overflow: hidden;
 }
 
-/* =========================================
-   NAVEGACIÓN (Arriba) - ESCALADA
-   ========================================= */
 .pocket-nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #506860;
-    padding: 12px 10px; /* Más padding para los botones grandes */
+    padding: 12px 10px;
     border-radius: 6px;
     margin-bottom: 15px;
     gap: 8px;
@@ -48,7 +41,6 @@ body {
     background: none;
     border: none;
     color: white;
-    /* Fuente más grande: de 1.2rem a 1.6rem */
     font-size: 1.6rem; 
     cursor: pointer;
     text-transform: uppercase;
@@ -56,19 +48,15 @@ body {
 }
 
 .nav-btn:hover {
-    color: #f8e870; /* Color amarillo de selección */
+    color: #f8e870;
 }
 
-/* =========================================
-   CENTRO (Estático y grande)
-   ========================================= */
 .main-content {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Mitad y mitad exactos */
+    grid-template-columns: 1fr 1fr;
     flex-grow: 1;
-    gap: 15px; /* Más espacio entre paneles */
+    gap: 15px;
     margin-bottom: 15px;
-    /* Altura estable basada en el nuevo tamaño del cuadro de diálogo */
     height: calc(100% - 135px); 
 }
 
@@ -77,15 +65,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 3px solid #a8a8a8; /* Bordes internos más gruesos */
+    border: 3px solid #a8a8a8;
     background-color: #e8e8e8;
     border-radius: 6px;
     padding: 20px;
 }
 
-/* Contenedor ESTABLE y grande para la mochila */
 .bag-container {
-    width: 250px; /* Tamaño grande de la mochila */
+    width: 250px;
     height: 250px;
     display: flex;
     justify-content: center;
@@ -96,10 +83,8 @@ body {
 #bag-sprite {
     width: 100%;
     height: auto;
-    /* La alineación se mantiene estable gracias al contenedor fijo */
 }
 
-/* El cuadradito gris de abajo también crece */
 .item-icon {
     width: 70px;
     height: 70px;
@@ -111,7 +96,7 @@ body {
 }
 
 .list-panel {
-    border: 3px solid #506860; /* Borde más grueso */
+    border: 3px solid #506860;
     background-color: white;
     border-radius: 6px;
     padding: 15px;
@@ -123,7 +108,6 @@ body {
 }
 
 #item-list li {
-    /* Fuente de lista más grande: de 1.4rem a 2.0rem */
     font-size: 2.0rem; 
     padding: 8px 0;
     cursor: pointer;
@@ -140,50 +124,46 @@ body {
 }
 
 #item-list li:hover::before {
-    color: #e84850; /* Flechita roja de selección */
+    color: #e84850;
 }
 
-/* =========================================
-   CUADRO DE DIÁLOGO (Abajo) - ESCALADO
-   ========================================= */
 .dialog-box {
-    /* Aumentamos la altura de 80px a 120px */
     height: 120px;
     background-color: white;
-    border: 6px solid #506860; /* Borde grueso estable */
+    border: 6px solid #506860;
     border-radius: 12px;
     padding: 15px;
-    /* Fuente de diálogo más grande: de 1.5rem a 2.2rem */
     font-size: 2.2rem; 
     line-height: 1.3;
     box-shadow: inset 3px 3px 0px #a8a8a8;
     display: flex;
-    align-items: center; /* Centra el texto verticalmente */
+    align-items: center;
 }
 
-/* =========================================
-   UTILIDADES Y ANIMACIONES (Estables)
-   ========================================= */
+/* Estilos para los links que pongas en el texto */
+.dialog-box a {
+    color: #2b7bc4;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.dialog-box a:hover {
+    color: #e84850;
+}
+
 .pixel-art {
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
 }
 
-/* La animación perfecta que ya tenías */
 @keyframes pokePop {
-    0% {
-        transform: scale(0.9); /* Empieza un poco chica */
-    }
-    40% {
-        transform: scale(1.05); /* Se estira rápido */
-    }
-    100% {
-        transform: scale(1); /* Vuelve al tamaño normal */
-    }
+    0% { transform: scale(0.9); }
+    40% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
 
-/* Clase aplicada vía JS solo a la imagen grande */
 .animate-bag {
-    animation: pokePop 0.3s ease-out; /* Duración rápida */
+    animation: pokePop 0.3s ease-out;
 }
