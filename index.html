@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de JuanSe Macchi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="gba-screen">
+        <header class="pocket-nav">
+            <button class="nav-btn" data-category="proyectos">Proyectos</button>
+            <button class="nav-btn" data-category="habilidades">Habilidades</button>
+            <button class="nav-btn" data-category="educacion">Educación</button>
+            <button class="nav-btn" data-category="sobreMi">Sobre Mí</button>
+            <button class="nav-btn" data-category="contactos">Contactos</button>
+        </header>
+
+        <main class="main-content">
+            <section class="visual-panel">
+                <div class="bag-container">
+                    <img src="assets/Mochila_Proyectos.png" alt="Mochila Pokémon" id="bag-sprite" class="pixel-art">
+                </div>
+                <div class="item-icon" id="item-icon-display">
+                </div>
+            </section>
+
+            <section class="list-panel">
+                <ul id="item-list">
+                </ul>
+            </section>
+        </main>
+
+        <footer class="dialog-box">
+            <p id="dialog-text">¡Hola! Selecciona un bolsillo para explorar mi experiencia.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
