@@ -10,7 +10,7 @@ const portfolioData = {
     proyectos: [
         { 
             nombre: "La Verdulería de Teto", 
-            descripcion: "Proyecto frontend: Página web ficticia desarrollada con HTML, CSS y JS. <a href='https://juankip.github.io/La-verduleria-de-teto/' target='_blank'>[Ver código]</a>",
+            descripcion: "Proyecto frontend: Página web ficticia desarrollada con HTML, CSS y JS. <a href='https://juankip.github.io/La-verduleria-de-teto/' target='_blank'>[Ver página]</a>",
             icono: "assets/icon-html.png" 
         },
         { 
