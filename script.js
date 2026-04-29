@@ -10,7 +10,7 @@ const portfolioData = {
     proyectos: [
         { 
             nombre: "La Verdulería de Teto", 
-            descripcion: "Proyecto frontend: Página web ficticia desarrollada con HTML, CSS y JS. <a href='https://juankip.github.io/La-verduleria-de-teto/' target='_blank'>[Ver página]</a>",
+            descripcion: "Proyecto frontend: Página web ficticia desarrollada con HTML, CSS y JS. <a href='https://juankip.github.io/La-verduleria-de-teto/' target='_blank'>[Ver código]</a>",
             icono: "assets/icon-html.png" 
         },
         { 
@@ -29,28 +29,29 @@ const portfolioData = {
     educacion: [
         { 
             nombre: "Programación & Web", 
-            descripcion: "Certificados: <a href='./Multimedia/Certificados/Certificado_Front_EndJS.pdf' target='_blank'>[Front-End JS]</a> <a href='./Multimedia/Certificados/Diploma_CAC.pdf' target='_blank'>[Prog. Inicial Codo a Codo]</a> <a href='./Multimedia/Certificados/Certificado_Cobol.pdf' target='_blank'>[Intro a Cobol]</a> <a href='./Multimedia/Certificados/SOA_Python.pdf' target='_blank'>[Python]</a>", 
+            descripcion: "Certificados: <a href='./Multimedia/Certificados/Certificado_Front_EndJS.pdf' target='_blank'>[Front-End JS]</a> <a href='./Multimedia/Certificados/Diploma_CAC.pdf' target='_blank'>[Codo a Codo]</a> <a href='./Multimedia/Certificados/Certificado_Cobol.pdf' target='_blank'>[Cobol]</a> <a href='./Multimedia/Certificados/SOA_Python.pdf' target='_blank'>[Python]</a>", 
             icono: "assets/icon-code.png" 
         },
         { 
             nombre: "Data e IA", 
-            descripcion: "Certificados: <a href='./Multimedia/Certificados/DataAnalytics.pdf' target='_blank'>[Data Analytics]</a> <a href='./Multimedia/Certificados/SOA_CienciaDatos.pdf' target='_blank'>[Ciencia de Datos]</a> <a href='./Multimedia/Certificados/IntroduccionIA.pdf' target='_blank'>[Intro a IA]</a> <a href='./Multimedia/Certificados/SOA_Gemini.pdf' target='_blank'>[Google: IA y Productividad]</a>", 
+            descripcion: "Certificados: <a href='./Multimedia/Certificados/DataAnalytics.pdf' target='_blank'>[Data Analytics]</a> <a href='./Multimedia/Certificados/SOA_CienciaDatos.pdf' target='_blank'>[Ciencia de Datos]</a> <a href='./Multimedia/Certificados/IntroduccionIA.pdf' target='_blank'>[Intro a IA]</a> <a href='./Multimedia/Certificados/SOA_Gemini.pdf' target='_blank'>[IA y Productividad]</a>", 
             icono: "assets/icon-chart.png" 
         },
         { 
             nombre: "Negocios & Tech", 
-            descripcion: "Certificados: <a href='./Multimedia/Certificados/SOA_Ecommerce.pdf' target='_blank'>[E-Commerce]</a> <a href='./Multimedia/Certificados/curso_santander___habilidades_digitales_para_el_siglo_xxi.pdf' target='_blank'>[Hab. Digitales s.XXI]</a> <a href='./Multimedia/Certificados/SOA_PowerBI.pdf' target='_blank'>[Power BI]</a> <a href='./Multimedia/Certificados/SOA_Excel.pdf' target='_blank'>[Excel]</a> <a href='./Multimedia/Certificados/SOA_IoT.pdf' target='_blank'>[Internet de las Cosas]</a>", 
+            descripcion: "Certificados: <a href='./Multimedia/Certificados/SOA_Ecommerce.pdf' target='_blank'>[E-Commerce]</a> <a href='./Multimedia/Certificados/curso_santander___habilidades_digitales_para_el_siglo_xxi.pdf' target='_blank'>[Hab. Digitales]</a> <a href='./Multimedia/Certificados/SOA_PowerBI.pdf' target='_blank'>[Power BI]</a> <a href='./Multimedia/Certificados/SOA_Excel.pdf' target='_blank'>[Excel]</a> <a href='./Multimedia/Certificados/SOA_IoT.pdf' target='_blank'>[IoT]</a>", 
             icono: "assets/icon-book.png" 
         },
         { 
             nombre: "Idiomas & Soft Skills", 
-            descripcion: "Certificados: <a href='./Multimedia/Certificados/AgHa_Ingles.pdf' target='_blank'>[Inglés Nivel Int. 1]</a> <a href='./Multimedia/Certificados/SOA_Ingles.pdf' target='_blank'>[Business English]</a> <a href='./Multimedia/Certificados/SOA_CommEstrat.pdf' target='_blank'>[Comunicación Estratégica]</a> <a href='./Multimedia/Certificados/SOA_Psico.pdf' target='_blank'>[Comportamiento Consumidor]</a>", 
+            descripcion: "Certificados: <a href='./Multimedia/Certificados/AgHa_Ingles.pdf' target='_blank'>[Inglés Int. 1]</a> <a href='./Multimedia/Certificados/SOA_Ingles.pdf' target='_blank'>[Business English]</a> <a href='./Multimedia/Certificados/SOA_CommEstrat.pdf' target='_blank'>[Comunicación]</a> <a href='./Multimedia/Certificados/SOA_Psico.pdf' target='_blank'>[Consumidor]</a>", 
             icono: "assets/icon-chat.png" 
         }
     ],
     sobreMi: [
         { nombre: "Perfil Profesional", descripcion: "Estudiante de Análisis en Sistemas. Altamente motivado, atento al detalle y con fuertes habilidades lógicas.", icono: "assets/icon-user.png" },
-        { nombre: "Experiencia Laboral", descripcion: "Digitador en MANPOWER Argentina (2023 y 2025). Gestión de datos, mecanografía y análisis.", icono: "assets/icon-work.png" }
+        { nombre: "Experiencia Laboral", descripcion: "Digitador en MANPOWER Argentina (2023 y 2025). Gestión de datos, mecanografía y análisis de datos.", icono: "assets/icon-work.png" },
+        { nombre: "Intereses", descripcion: "Arquero de fútbol en mi tiempo libre. Acostumbrado a la colaboración y a mantener la cabeza fría bajo presión.", icono: "assets/icon-football.png" }
     ],
     contactos: [
         { nombre: "LinkedIn", descripcion: "¡Conectemos para futuras oportunidades! <a href='https://www.linkedin.com/in/juan-sebastián-macchi-441191230/' target='_blank'>[Mi Perfil]</a>", icono: "assets/icon-linkedin.png" },
@@ -65,9 +66,14 @@ const dialogText = document.getElementById('dialog-text');
 const bagSprite = document.getElementById('bag-sprite');
 const itemIcon = document.getElementById('item-icon-display');
 
-// --- Efecto de sonido retro ---
+// Efecto de sonido
 const selectSound = new Audio('assets/gba_sound.mp3');
-selectSound.volume = 0.3; // Volumen al 30% para que sea agradable
+selectSound.volume = 0.3;
+
+function playSound() {
+    selectSound.currentTime = 0;
+    selectSound.play().catch(e => console.log("Audio bloqueado", e));
+}
 
 function renderItems(category) {
     itemList.innerHTML = '';
@@ -78,15 +84,13 @@ function renderItems(category) {
         li.textContent = item.nombre;
         
         li.addEventListener('click', () => {
-            // Actualiza el texto
+            playSound();
             dialogText.innerHTML = item.descripcion;
             
-            // Actualiza el ícono si existe
             if (item.icono) {
-                // Inyectamos la imagen con la clase pixel-art para que no se vea borrosa
                 itemIcon.innerHTML = `<img src="${item.icono}" alt="${item.nombre}" style="width: 100%; height: 100%; object-fit: contain;" class="pixel-art">`;
             } else {
-                itemIcon.innerHTML = ''; // Lo deja vacío si por algún motivo no le pusiste ícono
+                itemIcon.innerHTML = '';
             }
         });
 
@@ -96,27 +100,19 @@ function renderItems(category) {
 
 navButtons.forEach(button => {
     button.addEventListener('click', () => {
-        // Reproducir el sonido
-        selectSound.currentTime = 0; 
-        selectSound.play().catch(error => console.log("El navegador bloqueó el audio", error));
-
-        // Animación de la mochila
+        playSound();
         bagSprite.classList.remove('animate-bag');
         void bagSprite.offsetWidth; 
         bagSprite.classList.add('animate-bag');
 
-        // Estilos de los botones
         navButtons.forEach(btn => btn.style.color = 'white');
         button.style.color = '#f8e870';
 
         const category = button.getAttribute('data-category');
-        
         renderItems(category);
-        
-        // Cambiar mochila y resetear texto/ícono
         bagSprite.src = bagImages[category];
         dialogText.innerHTML = "¿Qué vas a revisar?";
-        itemIcon.innerHTML = ''; // Limpia el ícono al cambiar de bolsillo
+        itemIcon.innerHTML = ''; 
     });
 });
 
