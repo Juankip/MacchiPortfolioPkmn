@@ -167,3 +167,87 @@ body {
 .animate-bag {
     animation: pokePop 0.3s ease-out;
 }
+/* =========================================
+   DISEÑO RESPONSIVO (Celulares y Tablets)
+   ========================================= */
+@media (max-width: 950px) {
+    /* Ajustamos el contenedor principal al tamaño de la pantalla */
+    .gba-screen {
+        width: 95%;
+        height: 95vh; /* Ocupa el 95% del alto de la pantalla */
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    /* En celulares, cambiamos la estructura para que sea vertical */
+    
+    body {
+        padding: 10px;
+    }
+
+    .gba-screen {
+        width: 100%;
+        height: auto; /* Dejamos que el alto fluya */
+        max-height: 98vh;
+        padding: 10px;
+        border-width: 4px; /* Bordes un poco más finos */
+    }
+
+    /* Achicamos la botonera superior */
+    .pocket-nav {
+        padding: 8px 5px;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+
+    .nav-btn {
+        font-size: 1.2rem; /* Fuente más chica para que entren los botones */
+    }
+
+    /* Pasamos la grilla a 1 sola columna (arriba/abajo) */
+    .main-content {
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* Achicamos la mochila */
+    .visual-panel {
+        padding: 10px;
+        flex-direction: row; /* Mochila e ícono uno al lado del otro para ahorrar espacio */
+        justify-content: space-evenly;
+    }
+
+    .bag-container {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 0;
+    }
+
+    .item-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Hacemos que la lista tenga scroll propio en mobile */
+    .list-panel {
+        max-height: 200px; /* Altura máxima para que no empuje el cuadro de diálogo fuera de la pantalla */
+        padding: 10px;
+    }
+
+    #item-list li {
+        font-size: 1.5rem;
+        padding: 5px 0;
+    }
+
+    /* Ajustamos el cuadro de texto inferior */
+    .dialog-box {
+        height: auto;
+        min-height: 100px;
+        font-size: 1.6rem;
+        padding: 10px;
+        border-width: 4px;
+    }
+}
