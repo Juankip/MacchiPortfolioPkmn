@@ -26,7 +26,7 @@ const portfolioData = {
         { nombre: "Idiomas", descripcion: "Inglés C1 Avanzado y Español Nativo.", icono: "assets/icon-Argentina.png" },
         { nombre: "Ofimática", descripcion: "Microsoft Word, Excel y PowerPoint Avanzado (Paquete Office).", icono: "assets/icon-Office.png" }
     ],
-educacion: [
+    educacion: [
         { 
             nombre: "Programación & Web", 
             descripcion: "Certificados: <a href='./Multimedia/Certificados/Certificado_Front_EndJS.pdf' target='_blank'>[Front-End JS]</a> <a href='./Multimedia/Certificados/Diploma_CAC.pdf' target='_blank'>[Prog. Inicial Codo a Codo]</a> <a href='./Multimedia/Certificados/Certificado_Cobol.pdf' target='_blank'>[Intro a Cobol]</a> <a href='./Multimedia/Certificados/SOA_Python.pdf' target='_blank'>[Python]</a>", 
@@ -65,6 +65,10 @@ const dialogText = document.getElementById('dialog-text');
 const bagSprite = document.getElementById('bag-sprite');
 const itemIcon = document.getElementById('item-icon-display');
 
+// --- Efecto de sonido retro ---
+const selectSound = new Audio('assets/gba_sound.mp3');
+selectSound.volume = 0.3; // Volumen al 30% para que sea agradable
+
 function renderItems(category) {
     itemList.innerHTML = '';
     const items = portfolioData[category];
@@ -92,10 +96,16 @@ function renderItems(category) {
 
 navButtons.forEach(button => {
     button.addEventListener('click', () => {
+        // Reproducir el sonido
+        selectSound.currentTime = 0; 
+        selectSound.play().catch(error => console.log("El navegador bloqueó el audio", error));
+
+        // Animación de la mochila
         bagSprite.classList.remove('animate-bag');
         void bagSprite.offsetWidth; 
         bagSprite.classList.add('animate-bag');
 
+        // Estilos de los botones
         navButtons.forEach(btn => btn.style.color = 'white');
         button.style.color = '#f8e870';
 
@@ -103,8 +113,8 @@ navButtons.forEach(button => {
         
         renderItems(category);
         
+        // Cambiar mochila y resetear texto/ícono
         bagSprite.src = bagImages[category];
-        
         dialogText.innerHTML = "¿Qué vas a revisar?";
         itemIcon.innerHTML = ''; // Limpia el ícono al cambiar de bolsillo
     });
