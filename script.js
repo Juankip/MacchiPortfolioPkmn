@@ -29,7 +29,7 @@ const portfolioData = {
     educacion: [
         { 
             nombre: "Programación & Web", 
-            descripcion: "Certificados: <a href='./Multimedia/Certificados/Certificado_Front_EndJS.pdf' target='_blank'>[Front-End JS]</a> <a href='./Multimedia/Certificados/Diploma_CAC.pdf' target='_blank'>[Codo a Codo]</a> <a href='./Multimedia/Certificados/Certificado_Cobol.pdf' target='_blank'>[Cobol]</a> <a href='./Multimedia/Certificados/SOA_Python.pdf' target='_blank'>[Python]</a>", 
+            descripcion: "Certificados: <a href='./Multimedia/Certificados/Certificado_Front_EndJS.pdf' target='_blank'>[Front-End JS]</a> <a href='./Multimedia/Certificados/Diploma_CAC.pdf' target='_blank'>[Programación Inicial]</a> <a href='./Multimedia/Certificados/Certificado_Cobol.pdf' target='_blank'>[Cobol]</a> <a href='./Multimedia/Certificados/SOA_Python.pdf' target='_blank'>[Python]</a>", 
             icono: "assets/icon-code.png" 
         },
         { 
